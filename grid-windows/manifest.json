@@ -1,0 +1,24 @@
+{
+  "name": "Chrome Extension Workshop",
+  "version": "1.0",
+  "manifest_version":2,
+  "description": "Create Grid Windows.",
+
+  "browser_action": {
+    "default_title": "Create Grid Windows",
+    "default_popup": "./popup/index.html"
+
+  },
+
+  "background":{
+    "scripts":["background.js"],
+    "persistent": false
+  },
+
+  "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self'",
+
+  "permissions":[
+    "activeTab"
+  ]
+
+}
